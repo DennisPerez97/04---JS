@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+    <title>Pokedex</title>
+    <link rel="icon" sizes="192x192" href="assets/img/favicon/favicon-192.png">
+    <link rel="stylesheet" media="screen" href="./style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+    <div class="fondo">
+        <div class="contenedorpokedex">
+            <div class="tapasuperior">
+                <img src="./assets/img/superior.png">
+            </div>
+            <div class="pokedex__contenido">
+                <div class = "searchcontainer">
+                    <form  onsubmit="return false"">
+                    <button class="buttonsearch" onclick="fetchPokemon()"> </button>
+                    <input type="text" id="pokeName" name="pokeName" placeholder="Search..">
+                  </form>
+
+                  <div class="pokemoncontainer" id="pokemoncontainer">
+                      
+
+                    <!--<div class="radarChart"></div>-->
+                    <div class="containername">
+
+                        <h2 id="pkmnName"></h2>
+                    </div> <!--termina container name-->
+
+                    <img src="" class="imgpokemon" id="imgpkmn" alt="">
+                    <ul id="pkmnType">
+                    </ul>
+                    
+                    <button class="buttonpokedex" onclick="openmoves()"><img src="./assets/img/btn/pokeball.png"> </button>
+                    <button class="buttonpokedex" onclick="openstats()"><img src="./assets/img/btn/stats.png"></button>
+                  </div>
+                </div>
+                <div class="windowinfo" id="windowinfo">
+                    <h2 id="windowtitle"> </h2>
+                    <button class="close" onclick="closeWindow()">X</button>
+                    <div id="windowcontent">
+                        
+                    </div>
+                    <!-- <div class="radarChart"></div> -->
+
+                </div>
+            </div>
+            <div class="tapainferior">
+                <img src="./assets/img/inferior.png">
+            </div>
+
+        </div>
+
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+<footer>
+
+</footer>
